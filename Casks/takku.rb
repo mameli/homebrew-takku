@@ -16,6 +16,8 @@ cask "takku" do
   depends_on macos: :sequoia
 
   app "Takku.app"
+  # `takku list|search|get|mcp`: the meetings in the terminal (Takku 1.16.0 or later).
+  binary "#{appdir}/Takku.app/Contents/MacOS/Takku", target: "takku"
 
   uninstall quit: "app.takku.takku"
 
