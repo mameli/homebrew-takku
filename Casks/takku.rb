@@ -1,6 +1,6 @@
 cask "takku" do
-  version "1.16.1"
-  sha256 "8fd540696c14108b6e1c5c078a1ad4cfcf83c75234269a7ae623a510db0ff738"
+  version "1.17.0"
+  sha256 "bd2867ee0ea06edfb0ff3b17c580439a4ab07ecfe644a5309369e7034aa6862a"
 
   url "https://github.com/mameli/Takku/releases/download/v#{version}/Takku-#{version}.dmg"
   name "Takku"
@@ -11,6 +11,8 @@ cask "takku" do
     url :url
     strategy :github_latest
   end
+
+  auto_updates true
 
   depends_on arch: :arm64
   depends_on macos: :sequoia
